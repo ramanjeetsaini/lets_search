@@ -50,9 +50,9 @@ class PerplexityClient:
             API response as dictionary
         """
         # Build search query
-        query = name
+        query = "Professional profile which shows current designation and company name of" + name
         if location:
-            query += f" {location}"
+            query += f" working at  {location}"
         
         # Prepare request payload
         payload = {
